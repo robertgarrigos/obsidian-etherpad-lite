@@ -205,7 +205,7 @@ export default class Etherpad extends Plugin {
 
   get_url_for_pad_id(pad_id) {
     pad_id = pad_id.replace(" ", "_");
-    return `http://${this.settings.host}:${this.settings.port}/p/${pad_id}`
+    return `https://${this.settings.host}:${this.settings.port}/p/${pad_id}`
   }
 
   async replace_note_from_etherpad(note) {
